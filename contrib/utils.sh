@@ -82,7 +82,7 @@ function download_file() {
 	if [[ ! -f "$cache_path" ]]; then
 		mkdir -p "$(dirname "$cache_path")" # just in case
 		# fetch it
-		wget -L -q --show-progress "$1" -O "$cache_path" || die "$failure_message"
+		wget -q --show-progress "$1" -O "$cache_path" || die "$failure_message"
 	else
 		touch -c -a "$cache_path"
 	fi
