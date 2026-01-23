@@ -37,7 +37,6 @@ for module in admin bedtime core enchantments permissions portals regions trifle
 	download_latest_github_release "oddlama/vane" "vane-$module-{VERSION}.jar" "plugins/vane-$module.jar"
 done
 
-download_file "https://ci.dmulloy2.net/job/ProtocolLib/lastSuccessfulBuild/artifact/build/libs/ProtocolLib.jar" plugins/ProtocolLib.jar
 download_latest_github_release "BlueMap-Minecraft/BlueMap" "BlueMap-{VERSION}-spigot.jar" plugins/bluemap.jar
 download_from_json_feed \
   "https://ci.lucko.me/job/spark/lastSuccessfulBuild/api/json" \
